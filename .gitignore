@@ -1,0 +1,33 @@
+# Symfony 3 - cache, session files, temporary files and logs
+/var/cache/*
+/var/logs/*
+/var/sessions/*
+/var/imports/*
+/var/SymfonyRequirements.php
+/var/bootstrap.php.cache
+
+# Symfony 3 - web folder
+/web/bundles/*
+/web/uploads/*
+
+# Hidden Parameters
+/app/config/parameters.yml
+/app/config/parameters.yml.dist
+
+# Composer
+/vendor/*
+
+# Build Folders
+/build/*
+
+# PHPUnit
+/cache.properties
+
+# Email spool folder
+/app/spool/*
+
+# Backup entities generated with doctrine:generate:entities command
+*/Entity/*~
+
+# IDE specific stuff
+/.idea
