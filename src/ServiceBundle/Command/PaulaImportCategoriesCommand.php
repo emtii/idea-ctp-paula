@@ -2,7 +2,6 @@
 
 namespace ServiceBundle\Command;
 
-use ServiceBundle\Components\ExecutionTime\ExecutionTime;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
