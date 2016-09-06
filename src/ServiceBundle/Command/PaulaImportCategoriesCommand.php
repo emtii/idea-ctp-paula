@@ -3,12 +3,10 @@
 namespace ServiceBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
-use Symfony\Component\Console\Exception\InvalidOptionException;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-use Symfony\Component\Stopwatch\Stopwatch;
 
 /**
  * Class PaulaImportCategoriesCommand
@@ -110,8 +108,13 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
         // http://symfony.com/doc/current/components/stopwatch.html
         // $sw = new Stopwatch();
 
+        // table for results
+        // $io->table();
+
         // http://symfony.com/doc/current/console/style.html
         // $io = new SymfonyStyle($input, $output);
 
+        // progress bar
+        // $io->progressStart();
     }
 }
