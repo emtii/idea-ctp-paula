@@ -7,6 +7,7 @@ use Symfony\Component\Console\Exception\InvalidOptionException;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Stopwatch\Stopwatch;
 
 /**
@@ -79,9 +80,18 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
      */
     protected function interact(InputInterface $input, OutputInterface $output)
     {
+        $io = new SymfonyStyle($input, $output);
+
         // check for used option and set int typecasted value
         if($input->hasOption(self::NAMEOFOPTBATCHSIZE)) {
-            $this->batchSize = (int) $input->getOption(self::NAMEOFOPTBATCHSIZE);
+            $optBatchSize = $input->getOption(self::NAMEOFOPTBATCHSIZE);
+
+            // check for type and value > 1
+            if(!is_numeric($optBatchSize) || $optBatchSize < 1) {
+                $io->error('Invalid option used. Please use integer > 1 only.');
+            } else {
+                $this->batchSize = (int) $optBatchSize;
+            }
         }
     }
 
@@ -99,5 +109,9 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
     {
         // http://symfony.com/doc/current/components/stopwatch.html
         // $sw = new Stopwatch();
+
+        // http://symfony.com/doc/current/console/style.html
+        // $io = new SymfonyStyle($input, $output);
+
     }
 }
