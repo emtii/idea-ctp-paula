@@ -112,13 +112,13 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
         // http://symfony.com/doc/current/components/stopwatch.html
         // $sw = new Stopwatch();
 
-        // table for results
-        // $io->table();
-
         // http://symfony.com/doc/current/console/style.html
         // $io = new SymfonyStyle($input, $output);
 
-        // progress bar
+        // progress bar for execute
         // $io->progressStart();
+
+        // table for stopwatch results
+        // $io->table();
     }
 }
