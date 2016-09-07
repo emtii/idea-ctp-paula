@@ -23,6 +23,8 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
 {
     const NAMEOFCOMMAND = 'paula:import-categories';
     const NAMEOFOPTBATCHSIZE = 'batch-size';
+    const MINBATCHSIZE = 1;
+    const MAXBATCHSIZE = 500;
 
     private $batchSize = 1;
 
@@ -85,8 +87,10 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
             $optBatchSize = $input->getOption(self::NAMEOFOPTBATCHSIZE);
 
             // check for type and value > 1
-            if(!is_numeric($optBatchSize) || $optBatchSize < 1) {
-                $io->error('Invalid option used. Please use integer > 1 only.');
+            if(!is_numeric($optBatchSize) ||
+                $optBatchSize < self::MINBATCHSIZE ||
+                    $optBatchSize > self::MAXBATCHSIZE) {
+                $io->error('Invalid option used. Please use integer >= 1 & <= 500 only.');
             } else {
                 $this->batchSize = (int) $optBatchSize;
             }
