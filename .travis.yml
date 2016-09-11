@@ -5,19 +5,28 @@ php:
 
 cache:
   directories:
-  - vendor
+    - vendor
 
 before_install:
+
 install:
-- composer install --no-interaction
+  - composer install --no-interaction
 
 before_script:
+
 script:
+  - phpunit --coverage-text --coverage-clover=coverage.clover
+
 after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
 
 after_success:
+
 after_failure:
 
 before_deploy:
+
 deploy:
+
 after_deploy:
