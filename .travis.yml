@@ -9,9 +9,9 @@ cache:
 
 before_install:
 install:
+- composer install --no-interaction
 
 before_script:
-  - composer install
 script:
 after_script:
 
