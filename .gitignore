@@ -11,8 +11,8 @@
 /web/uploads/*
 
 # Hidden Parameters
-/app/config/parameters.yml
-/app/config/parameters.yml.dist
+#/app/config/parameters.yml
+#/app/config/parameters.yml.dist
 
 # Composer
 /vendor/*
