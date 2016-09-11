@@ -197,7 +197,7 @@ $hasMinorProblems = (bool) count($minorProblems);
                             </p>
                         <?php endif; ?>
 
-                        <?php if (!$hasMajorProblems) && !$hasMinorProblems): ?>
+                        <?php if (!$hasMajorProblems && !$hasMinorProblems): ?>
                             <p class="ok">All checks passed successfully. Your system is ready to run Symfony applications.</p>
                         <?php endif; ?>
 
