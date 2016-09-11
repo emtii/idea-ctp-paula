@@ -1,7 +1,14 @@
 # Symfony 3 - cache, session files, temporary files and logs
-/var/cache/*
-/var/logs/dev.log
 /var/bootstrap.php.cache
+/var/SymfonyRequirements.php
+/var/cache/*
+!/var/cache/.gitkeep
+/var/logs/*
+!/var/logs/.gitkeep
+/var/sessions/*
+!/var/sessions/.gitkeep
+/var/imports/*
+!/var/imports/.gitkeep
 
 # Symfony 3 - web folder
 /web/uploads/*
@@ -11,7 +18,8 @@
 #/app/config/parameters.yml.dist
 
 # Composer
-/vendor/*
+/vendor/
+/composer.lock
 
 # Build Folders
 /build/*
@@ -27,3 +35,6 @@
 
 # IDE specific stuff
 /.idea
+
+# Build
+/build/
