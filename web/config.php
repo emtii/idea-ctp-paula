@@ -202,7 +202,7 @@ $hasMinorProblems = (bool) count($minorProblems);
                         <?php endif; ?>
 
                         <ul class="symfony-install-continue">
-                            <?php if ($hasMajorProblems) || $hasMinorProblems): ?>
+                            <?php if ($hasMajorProblems || $hasMinorProblems): ?>
                                 <li><a href="config.php">Re-check configuration</a></li>
                             <?php endif; ?>
                         </ul>
