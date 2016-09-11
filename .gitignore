@@ -19,7 +19,6 @@
 
 # Composer
 /vendor/
-/composer.lock
 
 # Build Folders
 /build/*
