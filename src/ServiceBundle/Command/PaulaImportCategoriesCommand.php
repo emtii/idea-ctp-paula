@@ -21,10 +21,10 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  */
 class PaulaImportCategoriesCommand extends ContainerAwareCommand
 {
-    const NAMEOFCOMMAND = 'paula:import-categories';
-    const NAMEOFOPTBATCHSIZE = 'batch-size';
-    const MINBATCHSIZE = 1;
-    const MAXBATCHSIZE = 500;
+    const NAME_OF_COMMAND = 'paula:import-categories';
+    const NAME_OF_OPT_BATCHSIZE = 'batch-size';
+    const MIN_BATCH_SIZE = 1;
+    const MAX_BATCH_SIZE = 500;
 
     private $batchSize = 1;
 
@@ -36,7 +36,7 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
     {
         $this
             // the name of the command (the part after "bin/console")
-            ->setName(self::NAMEOFCOMMAND)
+            ->setName(self::NAME_OF_COMMAND)
 
             // the short description shown while running "php bin/console paula:import-categories"
             ->setDescription('Import categories of given json to commerce tools platform.')
@@ -46,7 +46,7 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
             ->setHelp('This command allows you to create categories.')
 
             ->addOption(
-                self::NAMEOFOPTBATCHSIZE,
+                self::NAME_OF_OPT_BATCHSIZE,
                 1,
                 InputOption::VALUE_OPTIONAL,
                 'Size of batches we work on in one Request.'
@@ -83,14 +83,14 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
         $io = new SymfonyStyle($input, $output);
 
         // check for used option and set int typecasted value
-        if($input->hasOption(self::NAMEOFOPTBATCHSIZE)) {
-            $optBatchSize = $input->getOption(self::NAMEOFOPTBATCHSIZE);
+        if($input->hasOption(self::NAME_OF_OPT_BATCHSIZE)) {
+            $optBatchSize = $input->getOption(self::NAME_OF_OPT_BATCHSIZE);
 
             // check for type and value > 1
             if(!is_numeric($optBatchSize) ||
-                $optBatchSize < self::MINBATCHSIZE ||
-                    $optBatchSize > self::MAXBATCHSIZE) {
-                $io->error('Invalid option used. Please use integer >= 1 & <= 500 only.');
+                $optBatchSize < self::MIN_BATCH_SIZE ||
+                    $optBatchSize > self::MAX_BATCH_SIZE) {
+                $io->error('Invalid option used. Please use integer option type >= 1 and <= 500 only.');
             } else {
                 $this->batchSize = (int) $optBatchSize;
             }
