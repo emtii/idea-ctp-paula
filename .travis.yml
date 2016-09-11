@@ -26,13 +26,11 @@ after_success:
 after_failure:
 
 before_deploy:
-  - HAK=$HEROKU_API_KEY
-  - echo $HAK
 
 deploy:
   provider: heroku
   strategy: api
-  api_key: $HAK #set in environment variables of travis repository settings
+  api_key: $HEROKU_API_KEY
   app:
     master: idea-ctp-paula
 
