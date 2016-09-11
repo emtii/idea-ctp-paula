@@ -13,7 +13,6 @@ install:
   - composer install --no-interaction
 
 before_script:
-  - echo $HEROKU_API_KEY
 
 script:
   - phpunit --coverage-text --coverage-clover=coverage.clover
@@ -27,11 +26,13 @@ after_success:
 after_failure:
 
 before_deploy:
+  - HAK=$HEROKU_API_KEY
+  - echo $HAK
 
 deploy:
   provider: heroku
   strategy: api
-  api_key: $HEROKU_API_KEY #set in environment variables of travis repository settings
+  api_key: $HAK #set in environment variables of travis repository settings
   app:
     master: idea-ctp-paula
 
