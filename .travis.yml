@@ -28,7 +28,6 @@ after_success:
 after_failure:
 
 before_deploy:
-  - heroku config:set SYMFONY_ENV=prod
 
 deploy:
   provider: heroku
@@ -37,5 +36,7 @@ deploy:
     master: $HEROKU_API_KEY
   app:
     master: idea-ctp-paula
+  run:
+    - heroku config:set SYMFONY_ENV=prod
 
 after_deploy:
