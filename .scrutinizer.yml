@@ -1,4 +1,5 @@
 tools:
+  external_code_coverage: true
   php_sim: true
   php_pdepend: true
   php_analyzer: true
@@ -8,15 +9,6 @@ tools:
   sensiolabs_security_checker: true
   php_cs_fixer:
     config: { level: psr2 }
-build:
-  environment:
-    php: '7.0'
-  tests:
-    override:
-      -
-        command: 'phpunit --coverage-clover=coverage.clover'
-        coverage:
-          file: 'coverage.clover'
-          format: 'php-clover'
+
 filter:
     excluded_paths: [tests/*, var/*, build/*, web/*]
