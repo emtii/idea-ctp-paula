@@ -31,7 +31,8 @@ before_deploy:
 deploy:
   provider: heroku
   strategy: api
-  api_key: $HEROKU_API_KEY
+  api_key:
+    master: $HEROKU_API_KEY
   app:
     master: idea-ctp-paula
 
