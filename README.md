@@ -11,6 +11,8 @@ Usage: php bin/console paula:import-categories [options]
     --batch-size                    Choose batch size between 1 and 500.
 ```
 ## Version History
+### v0.0.4 (September 11, 2016)
+* add heroku deployment
 ### v0.0.3 (September 11, 2016)
 * add travis ci
 * add scrutinizer ci

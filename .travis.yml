@@ -8,7 +8,6 @@ cache:
     - vendor
 
 before_install:
-  - composer self-update
 
 install:
   - composer install --no-interaction
@@ -29,5 +28,10 @@ after_failure:
 before_deploy:
 
 deploy:
+  provider: heroku
+  strategy: api
+  api_key: $HEROKU_API_KEY #set in environment variables of travis repository settings
+  app:
+    master: idea-ctp-paula
 
 after_deploy:
