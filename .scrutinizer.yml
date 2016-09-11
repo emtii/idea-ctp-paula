@@ -10,5 +10,9 @@ tools:
   php_cs_fixer:
     config: { level: psr2 }
 
+build:
+  environment:
+    php: '7.0'
+
 filter:
     excluded_paths: [tests/*, var/*, build/*, web/*]
