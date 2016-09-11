@@ -11,6 +11,9 @@ Usage: php bin/console paula:import-categories [options]
     --batch-size                    Choose batch size between 1 and 500.
 ```
 ## Version History
+### v0.0.5 (September 11, 2016)
+* add phpunit codecoverage sent by travis to scrutinizer
+
 ### v0.0.4 (September 11, 2016)
 * add heroku deployment
 

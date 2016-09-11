@@ -90,7 +90,7 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
             ) {
                 $io->error('Invalid option used. Please use integer option type >= 1 and <= 500 only.');
             } else {
-                $this->batchSize = (int)$optBatchSize;
+                $this->batchSize = (int) $optBatchSize;
             }
         }
     }
