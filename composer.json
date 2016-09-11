@@ -1,5 +1,8 @@
 {
-    "name": "emtii/.checkout",
+    "name": "idea-ctp-paula",
+    "description": "Paula Kinderwagenfinder is a german website about detailed informations to buggies.",
+    "homepage": "http://www.paula-kinderwagenfinder.de",
+    "author": "emtii",
     "license": "proprietary",
     "type": "project",
     "autoload": {
@@ -17,7 +20,7 @@
         }
     },
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.0.0",
         "symfony/symfony": "3.1.*",
         "doctrine/orm": "^2.5",
         "doctrine/doctrine-bundle": "^1.6",

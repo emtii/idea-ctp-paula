@@ -1,9 +1,6 @@
 # Symfony 3 - cache, session files, temporary files and logs
 /var/cache/*
-/var/logs/*
-/var/sessions/*
-/var/imports/*
-/var/SymfonyRequirements.php
+/var/logs/dev.log
 /var/bootstrap.php.cache
 
 # Symfony 3 - web folder
