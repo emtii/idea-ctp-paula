@@ -13,11 +13,14 @@ Usage: php bin/console paula:import-categories [options]
 ## Version History
 ### v0.0.4 (September 11, 2016)
 * add heroku deployment
+
 ### v0.0.3 (September 11, 2016)
 * add travis ci
 * add scrutinizer ci
+
 ### v0.0.2 (September 6, 2016)
 * add catalog import command
+
 ### v0.0.1 (September 4, 2016)
 * initial symfony 3 app
 * add FrontendBundle
