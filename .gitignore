@@ -7,7 +7,6 @@
 /var/bootstrap.php.cache
 
 # Symfony 3 - web folder
-/web/bundles/framework*
 /web/uploads/*
 
 # Hidden Parameters
