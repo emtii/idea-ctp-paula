@@ -37,14 +37,11 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
         $this
             // the name of the command (the part after "bin/console")
             ->setName(self::NAME_OF_COMMAND)
-
             // the short description shown while running "php bin/console paula:import-categories"
             ->setDescription('Import categories of given json to commerce tools platform.')
-
             // the full command description shown when running the command with
             // the "--help" option
             ->setHelp('This command allows you to create categories.')
-
             ->addOption(
                 self::NAME_OF_OPT_BATCHSIZE,
                 1,
@@ -83,16 +80,17 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
         $io = new SymfonyStyle($input, $output);
 
         // check for used option and set int typecasted value
-        if($input->hasOption(self::NAME_OF_OPT_BATCHSIZE)) {
+        if ($input->hasOption(self::NAME_OF_OPT_BATCHSIZE)) {
             $optBatchSize = $input->getOption(self::NAME_OF_OPT_BATCHSIZE);
 
             // check for type and value > 1
-            if(!is_numeric($optBatchSize) ||
+            if (!is_numeric($optBatchSize) ||
                 $optBatchSize < self::MIN_BATCH_SIZE ||
-                    $optBatchSize > self::MAX_BATCH_SIZE) {
+                $optBatchSize > self::MAX_BATCH_SIZE
+            ) {
                 $io->error('Invalid option used. Please use integer option type >= 1 and <= 500 only.');
             } else {
-                $this->batchSize = (int) $optBatchSize;
+                $this->batchSize = (int)$optBatchSize;
             }
         }
     }

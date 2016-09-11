@@ -63,7 +63,6 @@ $hasMinorProblems = (bool) count($minorProblems);
             }
             .sf-reset ul a,
             .sf-reset ul a:hover {
-                background: url(../images/blue-arrow.png) no-repeat right 6px;
                 padding-right: 10px;
             }
             .sf-reset ul, ol {
@@ -100,7 +99,7 @@ $hasMinorProblems = (bool) count($minorProblems);
             }
             .sf-reset p.help {
                 padding: 12px 16px;
-                word-break: break-word;
+                word-break: break-all;
             }
             .version {
                 text-align: right;
