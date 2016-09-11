@@ -27,6 +27,7 @@ after_success:
 after_failure:
 
 before_deploy:
+  - heroku config:set SYMFONY_ENV=prod
 
 deploy:
   provider: heroku
