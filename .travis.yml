@@ -2,3 +2,22 @@ language: php
 
 php:
   - '7.0'
+
+cache:
+  directories:
+  - vendor
+
+before_install:
+install:
+
+before_script:
+  - composer install
+script:
+after_script:
+
+after_success:
+after_failure:
+
+before_deploy:
+deploy:
+after_deploy:
