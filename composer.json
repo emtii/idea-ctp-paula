@@ -3,7 +3,7 @@
     "description": "Paula Kinderwagenfinder is a german website about detailed informations to buggies.",
     "homepage": "http://www.paula-kinderwagenfinder.de",
     "author": "emtii",
-    "license": "proprietary",
+    "license": "MIT",
     "type": "project",
     "autoload": {
         "psr-4": {

@@ -16,7 +16,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  * @subpackage ServiceBundle\Command
  * @author     Marcel Thiesies <marcel.thiesies@me.com>
  * @copyright  2016 emtii
- * @license    http://www.emtii.de proprietary
+ * @license    http://www.emtii.de MIT
  * @link       http://www.emtii.de
  */
 class PaulaImportCategoriesCommand extends ContainerAwareCommand
