@@ -63,6 +63,7 @@ $hasMinorProblems = (bool) count($minorProblems);
             }
             .sf-reset ul a,
             .sf-reset ul a:hover {
+                background: url(../images/blue-arrow.png) no-repeat right 6px;
                 padding-right: 10px;
             }
             .sf-reset ul, ol {
@@ -99,7 +100,7 @@ $hasMinorProblems = (bool) count($minorProblems);
             }
             .sf-reset p.help {
                 padding: 12px 16px;
-                word-break: break-all;
+                word-break: break-word;
             }
             .version {
                 text-align: right;
@@ -188,7 +189,7 @@ $hasMinorProblems = (bool) count($minorProblems);
 
                         <?php if ($symfonyRequirements->hasPhpIniConfigIssue()): ?>
                             <p id="phpini">*
-                                <?php if ($symfonyRequirements->getPhpIniConfigPath() !== false): ?>
+                                <?php if ($symfonyRequirements->getPhpIniConfigPath()): ?>
                                     Changes to the <strong>php.ini</strong> file must be done in "<strong><?php echo $symfonyRequirements->getPhpIniConfigPath() ?></strong>".
                                 <?php else: ?>
                                     To change settings, create a "<strong>php.ini</strong>".
@@ -196,12 +197,12 @@ $hasMinorProblems = (bool) count($minorProblems);
                             </p>
                         <?php endif; ?>
 
-                        <?php if (!$hasMajorProblems && !$hasMinorProblems): ?>
+                        <?php if (!$hasMajorProblems) && !$hasMinorProblems): ?>
                             <p class="ok">All checks passed successfully. Your system is ready to run Symfony applications.</p>
                         <?php endif; ?>
 
                         <ul class="symfony-install-continue">
-                            <?php if ($hasMajorProblems || $hasMinorProblems): ?>
+                            <?php if ($hasMajorProblems) || $hasMinorProblems): ?>
                                 <li><a href="config.php">Re-check configuration</a></li>
                             <?php endif; ?>
                         </ul>
