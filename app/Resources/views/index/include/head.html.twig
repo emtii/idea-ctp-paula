@@ -44,7 +44,9 @@
     {% endblock %}
 
     {# fav icons #}
-    {% block frontend_index_head_fav %}{% endblock %}
+    {% block frontend_index_head_fav %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}?v=2" />
+    {% endblock %}
 
     {# site title #}
     <title>
@@ -54,13 +56,25 @@
     </title>
 
     {# css #}
-    {% block frontend_index_head_css %}{% endblock %}
+    {% block frontend_index_head_css %}
+        <link rel="stylesheet" href="{{ asset('bundles/frontend/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/frontend/css/freelancer.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/frontend/font-awesome/css/font-awesome.min.css') }}"
+    {% endblock %}
 
     {# js #}
-    {% block frontend_index_head_js %}{% endblock %}
+    {% block frontend_index_head_js %}
+        <script type="text/javascript" src="{{ asset('bundles/frontend/js/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/frontend/js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/frontend/js/jquery.nouislider.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('bundles/frontend/js/freelancer.js') }}"></script>
+    {% endblock %}
 
     {# fonts #}
-    {% block frontend_index_head_fonts %}{% endblock %}
+    {% block frontend_index_head_fonts %}
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    {% endblock %}
 
     {# trackings #}
     {% block frontend_index_head_trackings %}{% endblock %}
