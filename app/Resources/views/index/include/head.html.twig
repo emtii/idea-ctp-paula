@@ -1,0 +1,64 @@
+{% block frontend_index_head %}
+<head>
+
+    {% block frontend_index_head_meta %}
+
+        {# meta http tags #}
+        {% block frontend_index_head_meta_http %}{% endblock %}
+
+        {# meta general tags #}
+        {% block frontend_index_head_meta_general %}
+            <meta name="author" content="{% block frontend_index_head_meta_author %}{% endblock %}" />
+            <meta name="robots" content="{% block frontend_index_head_meta_robots %}{% endblock %}" />
+            <meta name="revisit-after" content="{% block frontend_index_meta_revisitafter %}{% endblock %}" />
+            <meta name="keywords" content="{% block frontend_index_meta_keywords %}{% endblock %}" />
+            <meta name="description" content="{% block frontend_index_meta_description %}{% endblock %}" />
+        {% endblock %}
+
+        {# meta open graph tags #}
+        {% block frontend_index_head_opengraph %}
+            <meta property="og:type" content="{% block frontend_index_head_opengraph_type %}{% endblock %}" />
+            <meta property="og:site_name" content="{% block frontend_index_head_opengraph_sitename %}{% endblock %}" />
+            <meta property="og:title" content="{% block frontend_index_head_opengraph_title %}{% endblock %}" />
+            <meta property="og:description" content="{% block frontend_index_head_opengraph_description %}{% endblock %}" />
+            <meta property="og:image" content="{% block frontend_index_head_opengraph_image %}{% endblock %}" />
+        {% endblock %}
+
+        {# meta twitter tags #}
+        {% block frontend_index_head_twitter %}
+            <meta name="twitter:card" content="{% block frontend_index_head_twitter_card %}{% endblock %}" />
+            <meta name="twitter:site" content="{% block frontend_index_head_twitter_site %}{% endblock %}" />
+            <meta name="twitter:title" content="{% block frontend_index_head_twitter_title %}{% endblock %}" />
+            <meta name="twitter:description" content="{% block frontend_index_head_twitter_description %}{% endblock %}" />
+            <meta name="twitter:image" content="{% block frontend_index_head_twitter_image %}{% endblock %}" />
+        {% endblock %}
+
+        {# meta schema tags #}
+        {% block frontend_index_head_schema %}
+            <meta itemprop="copyrightHolder" content="{% block frontend_index_head_schema_copyrightholder %}{% endblock %}" />
+            <meta itemprop="copyrightYear" content="{% block frontend_index_head_schema_copyrightyear %}{% endblock %}" />
+            <meta itemprop="isFamilyFriendly" content="{% block frontend_index_head_schema_isfamilyfriendly %}{% endblock %}" />
+            <meta itemprop="image" content="{% block frontend_index_head_schema_image %}{% endblock %}" />
+        {% endblock %}
+
+    {% endblock %}
+
+    {# fav icons #}
+    {% block frontend_index_head_fav %}{% endblock %}
+
+    {# site title #}
+    <title>
+        {% block frontend_index_head_title %}{% endblock %}
+    </title>
+
+    {# css #}
+    {% block frontend_index_head_css %}{% endblock %}
+
+    {# js #}
+    {% block frontend_index_head_js %}{% endblock %}
+
+    {# trackings #}
+    {% block frontend_index_head_trackings %}{% endblock %}
+
+</head>
+{% endblock %}

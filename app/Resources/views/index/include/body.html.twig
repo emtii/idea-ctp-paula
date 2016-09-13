@@ -1,0 +1,36 @@
+{% block frontend_index_body %}
+    <body>
+        {# body start #}
+        {% block frontend_index_body_start %}{% endblock %}
+
+        {# body inner #}
+        {% block frontend_index_body_inner %}
+
+            {# html5 header #}
+            {% block frontend_index_body_inner_header %}
+                {% include 'index/include/body_header.html.twig' %}
+            {% endblock %}
+
+            {# html5 nav #}
+            {% block frontend_index_body_inner_nav %}
+                {% include 'index/include/body_nav.html.twig' %}
+            {% endblock %}
+
+            {# html5 section #}
+            {% block frontend_index_body_inner_section %}
+                {% include 'index/include/body_section.html.twig' %}
+            {% endblock %}
+
+            {# html5 footer #}
+            {% block frontend_index_body_inner_footer %}
+                {% include 'index/include/body_footer.html.twig' %}
+            {% endblock %}
+        {% endblock %}
+
+        {# body end #}
+        {% block frontend_index_body_end %}{% endblock %}
+
+        {# body end js #}
+        {% block frontend_index_body_end_js %}{% endblock %}
+    </body>
+{% endblock %}
