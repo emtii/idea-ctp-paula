@@ -1,1 +1,6 @@
 {% extends 'index/index.html.twig' %}
+
+{% block frontend_index_head %}
+    {{ parent() }}
+    {% include 'home/include/head.html.twig' %}
+{% endblock %}
