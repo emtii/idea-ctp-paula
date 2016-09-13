@@ -1,4 +1,4 @@
-# <img src="web/bundles/frontend/images/paula-logo.png" width="150" height="150" align="center"></img> idea-ctp-paula
+# <img src="web/bundles/frontend/img/paula-logo.png" width="150" height="150" align="center"></img> idea-ctp-paula
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/emtii/idea-ctp-paula/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/emtii/idea-ctp-paula/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/emtii/idea-ctp-paula/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/emtii/idea-ctp-paula/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/emtii/idea-ctp-paula/badges/build.png?b=master)](https://scrutinizer-ci.com/g/emtii/idea-ctp-paula/build-status/master)
 
