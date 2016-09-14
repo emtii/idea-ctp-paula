@@ -14,7 +14,7 @@ class IndexController extends Controller
     public function indexAction(Request $request)
     {
         return $this->render('index/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
+            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..')
         ]);
     }
 }
