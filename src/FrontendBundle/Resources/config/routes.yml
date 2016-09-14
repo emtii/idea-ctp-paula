@@ -1,0 +1,3 @@
+frontend_bundle_index:
+    resource: "@FrontendBundle/Controller/IndexController.php"
+    type:     annotation

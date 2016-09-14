@@ -1,7 +1,5 @@
-ApiBundle:
-    resource: "@ApiBundle/Controller"
-    type:     annotation
+api_bundle:
+    resource: "@ApiBundle/Resources/config/routes.yml"
 
-FrontendBundle:
-    resource: "@FrontendBundle/Controller"
-    type:     annotation
+frontend_bundle:
+    resource: "@FrontendBundle/Resources/config/routes.yml"

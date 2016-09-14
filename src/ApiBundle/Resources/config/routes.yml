@@ -1,0 +1,3 @@
+api_bundle_product:
+  resource: "@ApiBundle/Controller/ProductController.php"
+  type: annotation
