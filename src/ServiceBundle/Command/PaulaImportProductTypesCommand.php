@@ -9,7 +9,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
 /**
- * Class PaulaImportCategoriesCommand
+ * Class PaulaProductTypesCommand
  *
  * @category   Emtii
  * @package    idea-ctp-paula
@@ -19,9 +19,9 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  * @license    http://www.emtii.de MIT
  * @link       http://www.emtii.de
  */
-class PaulaImportCategoriesCommand extends ContainerAwareCommand
+class PaulaProductTypesCommand extends ContainerAwareCommand
 {
-    const NAME_OF_COMMAND = 'paula:import-categories';
+    const NAME_OF_COMMAND = 'paula:import-producttypes';
     const NAME_OF_OPT_BATCHSIZE = 'batch-size';
     const MIN_BATCH_SIZE = 1;
     const MAX_BATCH_SIZE = 500;
@@ -38,10 +38,10 @@ class PaulaImportCategoriesCommand extends ContainerAwareCommand
             // the name of the command (the part after "bin/console")
             ->setName(self::NAME_OF_COMMAND)
             // the short description shown while running "php bin/console paula:import-categories"
-            ->setDescription('Import categories of given json to commerce tools platform.')
+            ->setDescription('Import product types of given json to commerce tools platform.')
             // the full command description shown when running the command with
             // the "--help" option
-            ->setHelp('This command allows you to create categories.')
+            ->setHelp('This command allows you to create product types.')
             ->addOption(
                 self::NAME_OF_OPT_BATCHSIZE,
                 1,
