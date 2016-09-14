@@ -19,7 +19,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  * @license    http://www.emtii.de MIT
  * @link       http://www.emtii.de
  */
-class PaulaProductTypesCommand extends ContainerAwareCommand
+class PaulaImportProductTypesCommand extends ContainerAwareCommand
 {
     const NAME_OF_COMMAND = 'paula:import-producttypes';
     const NAME_OF_OPT_BATCHSIZE = 'batch-size';
