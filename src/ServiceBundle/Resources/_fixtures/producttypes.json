@@ -1,3 +1,406 @@
 {
-
+  "producttypes": [
+    {
+      "id": 1,
+      "name": "product",
+      "key": "product",
+      "description": "product type",
+      "attributes": [
+        {
+          "type": "enum",
+          "name": "Marke",
+          "label": "Marke",
+          "inputTip": "Wählen Sie die Marke des Artikels.",
+          "isRequired": 0,
+          "attributeConstraint": "",
+          "inputHint": "",
+          "isSearchable": 1,
+          "values": [
+            {
+              "key": "abc-design",
+              "label": "ABC Design"
+            },
+            {
+              "key": "bergsteiger",
+              "label": "Bergsteiger"
+            },
+            {
+              "key": "bob",
+              "label": "Bob"
+            },
+            {
+              "key": "britax",
+              "label": "Britax"
+            },
+            {
+              "key": "bugaboo",
+              "label": "Bugaboo"
+            },
+            {
+              "key": "chicco",
+              "label": "Chicco"
+            },
+            {
+              "key": "concord",
+              "label": "Concord"
+            },
+            {
+              "key": "easywalker",
+              "label": "Easywalker"
+            },
+            {
+              "key": "fillikid",
+              "label": "Fillikid"
+            },
+            {
+              "key": "gesslein",
+              "label": "Gesslein"
+            },
+            {
+              "key": "hartan",
+              "label": "Hartan"
+            },
+            {
+              "key": "hauck",
+              "label": "Hauck"
+            },
+            {
+              "key": "hoco-austria",
+              "label": "Hoco Austria"
+            },
+            {
+              "key": "icoo",
+              "label": "Icoo"
+            },
+            {
+              "key": "jane",
+              "label": "Jané"
+            },
+            {
+              "key": "jette",
+              "label": "JETTE"
+            },
+            {
+              "key": "joie",
+              "label": "Joie"
+            },
+            {
+              "key": "knorr-baby",
+              "label": "knorr-baby"
+            },
+            {
+              "key": "moon",
+              "label": "Moon"
+            },
+            {
+              "key": "mutsy",
+              "label": "Mutsy"
+            },
+            {
+              "key": "nuna",
+              "label": "Nuna"
+            },
+            {
+              "key": "osann",
+              "label": "Osann"
+            },
+            {
+              "key": "peg-perego",
+              "label": "Bergsteiger"
+            },
+            {
+              "key": "quinny",
+              "label": "Quinny"
+            },
+            {
+              "key": "roemer",
+              "label": "Römer"
+            },
+            {
+              "key": "stokke",
+              "label": "STOKKE"
+            },
+            {
+              "key": "teutonia",
+              "label": "Teutonia"
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "values": [
+            {
+              "elementtype": "enum",
+              "name": "Gewicht",
+              "label": "Gewicht",
+              "inputTip": "Wählen Sie das Gewicht des Artikels.",
+              "isRequired": 0,
+              "attributeConstraint": "",
+              "inputHint": "",
+              "isSearchable": 1,
+              "values": [
+                {
+                  "key": "0-bis-5-kg",
+                  "label": "0 bis 5 kg"
+                },
+                {
+                  "key": "5-bis-10-kg",
+                  "label": "5 bis 10 kg"
+                },
+                {
+                  "key": "10-bis-15-kg",
+                  "label": "10 bis 15 kg"
+                },
+                {
+                  "key": "15-bis-20-kg",
+                  "label": "15 bis 20 kg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "values": [
+            {
+              "elementtype": "enum",
+              "name": "Farbe",
+              "label": "Farbe",
+              "inputTip": "Wählen Sie die Farbe des Artikels.",
+              "isRequired": 0,
+              "attributeConstraint": "",
+              "inputHint": "",
+              "isSearchable": 1,
+              "values": [
+                {
+                  "key": "beige",
+                  "label": "beige"
+                },
+                {
+                  "key": "blau",
+                  "label": "blau"
+                },
+                {
+                  "key": "braun",
+                  "label": "braun"
+                },
+                {
+                  "key": "bunt",
+                  "label": "bunt"
+                },
+                {
+                  "key": "gelb",
+                  "label": "gelb"
+                },
+                {
+                  "key": "grau",
+                  "label": "grau"
+                },
+                {
+                  "key": "gruen",
+                  "label": "grün"
+                },
+                {
+                  "key": "lila",
+                  "label": "lila"
+                },
+                {
+                  "key": "orange",
+                  "label": "orange"
+                },
+                {
+                  "key": "rosa-pink",
+                  "label": "rosa / pink"
+                },
+                {
+                  "key": "rot",
+                  "label": "rot"
+                },
+                {
+                  "key": "schwarz",
+                  "label": "schwarz"
+                },
+                {
+                  "key": "tuerkis",
+                  "label": "türkis"
+                },
+                {
+                  "key": "weiss",
+                  "label": "weiß"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "values": [
+            {
+              "elementtype": "enum",
+              "name": "Geschlecht",
+              "label": "Geschlecht",
+              "inputTip": "Wählen Sie das passende Geschlecht des Artikels.",
+              "isRequired": 0,
+              "attributeConstraint": "",
+              "inputHint": "",
+              "isSearchable": 1,
+              "values": [
+                {
+                  "key": "junge",
+                  "label": "Junge"
+                },
+                {
+                  "key": "maedchen",
+                  "label": "Mädchen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "values": [
+            {
+              "elementtype": "enum",
+              "name": "Fahrtrichtung",
+              "label": "Fahrtrichtung",
+              "inputTip": "Wählen Sie die passende Fahrtrichtung des Artikels.",
+              "isRequired": 0,
+              "attributeConstraint": "",
+              "inputHint": "",
+              "isSearchable": 1,
+              "values": [
+                {
+                  "key": "beide-richtungen",
+                  "label": "beide Richtungen"
+                },
+                {
+                  "key": "rueckwaerts",
+                  "label": "rückwärts"
+                },
+                {
+                  "key": "vorwaerts",
+                  "label": "vorwärts"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "values": [
+            {
+              "elementtype": "enum",
+              "name": "Kinderwagen-Typ",
+              "label": "Kinderwagen-Typ",
+              "inputTip": "Wählen Sie den passenden Kinderwagen-Typ zum Artikel.",
+              "isRequired": 0,
+              "attributeConstraint": "",
+              "inputHint": "",
+              "isSearchable": 1,
+              "values": [
+                {
+                  "key": "klassischer-kinderwagen",
+                  "label": "Klassischer Kinderwagen"
+                },
+                {
+                  "key": "buggy",
+                  "label": "Buggy"
+                },
+                {
+                  "key": "sportwagen",
+                  "label": "Sportwagen"
+                },
+                {
+                  "key": "zwillingwagen",
+                  "label": "Zwillingwagen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "set",
+          "values": [
+            {
+              "elementtype": "enum",
+              "name": "Tuev-geprueft",
+              "label": "TÜV geprüft",
+              "inputTip": "Wählen Sie aus, ob der Artikel TÜV geprüft wurde.",
+              "isRequired": 0,
+              "attributeConstraint": "",
+              "inputHint": "",
+              "isSearchable": 1,
+              "values": [
+                {
+                  "key": "ja",
+                  "label": "Ja"
+                },
+                {
+                  "key": "nein",
+                  "label": "Nein"
+                },
+                {
+                  "key": "ist-mir-egal",
+                  "label": "Ist mir egal (Ich hoffe nicht!)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "anzahl-raeder",
+          "label": "Anzahl Räder",
+          "inputTip": "Wählen Sie, wie viele Räder der Artikel hat.",
+          "isRequired": 0,
+          "attributeConstraint": "",
+          "inputHint": "",
+          "isSearchable": 1,
+          "values": [
+            {
+              "key": "3",
+              "label": "3"
+            },
+            {
+              "key": "4",
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "alter-des-kindes",
+          "label": "Alter des Kindes",
+          "inputTip": "Wählen Sie, wie alt das Kind sein kann, um den Artikel zu nutzen.",
+          "isRequired": 0,
+          "attributeConstraint": "",
+          "inputHint": "",
+          "isSearchable": 1,
+          "values": [
+            {
+              "key": "0-1",
+              "label": "0-1 Jahr"
+            },
+            {
+              "key": "1-2",
+              "label": "1-2 Jahre"
+            },
+            {
+              "key": "2-3",
+              "label": "2-3 Jahre"
+            },
+            {
+              "key": "3-4",
+              "label": "3-4 Jahre"
+            },
+            {
+              "key": "3-5",
+              "label": "3-5 Jahre"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

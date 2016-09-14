@@ -11,7 +11,12 @@ Usage: php bin/console paula:import-categories [options]
     --batch-size                    Choose batch size between 1 and 500.
 ```
 ## Version History
-### v0.0.6 (September 14, 2016)
+### v0.0.7 (September 14, 2016)
+* add api bundle for frontend
+* add first test controller to api bundle
+* add product type fixture with first attributes
+
+### v0.0.6 (September 13, 2016)
 * port very basic view from nodejs app to this symfony app
 
 ### v0.0.5 (September 11, 2016)
