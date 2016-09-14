@@ -12,6 +12,7 @@ Usage: php bin/console paula:import-categories [options]
 ```
 ## Version History
 ### v0.0.7 (September 14, 2016)
+* add channel fixture with first channel data
 * add api bundle for frontend
 * add first test controller to api bundle
 * add product type fixture with first attributes
