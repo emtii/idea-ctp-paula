@@ -7,10 +7,15 @@ A Symfony project created on September 4, 2016, 12:25 pm.
 ## Import Commands
 ### Catalog
 ``` console
-Usage: php bin/console paula:import-categories [options]
+Usage: php bin/console paula:import-producttypes [options]
     --batch-size                    Choose batch size between 1 and 500.
 ```
 ## Version History
+### v.0.0.8 (September 16, 2016)
+* implement ctp symfony bundle
+* remove own ctp bundle, not needed anymore
+* fix missing default value in product type import command
+
 ### v0.0.7 (September 14, 2016)
 * add channel fixture with first channel data
 * add api bundle for frontend

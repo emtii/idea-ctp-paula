@@ -2,6 +2,7 @@
 
 namespace ServiceBundle\Command;
 
+use ServiceBundle\Factory\ProductTypeFactory;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -46,7 +47,8 @@ class PaulaImportProductTypesCommand extends ContainerAwareCommand
                 self::NAME_OF_OPT_BATCHSIZE,
                 1,
                 InputOption::VALUE_OPTIONAL,
-                'Size of batches we work on in one Request.'
+                'Size of batches we work on in one Request.',
+                1
             );
     }
 

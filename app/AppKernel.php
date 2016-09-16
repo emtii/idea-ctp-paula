@@ -12,12 +12,12 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
-            new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
-            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new FrontendBundle\FrontendBundle(),
-            new ServiceBundle\ServiceBundle(),
-            new ApiBundle\ApiBundle()
+            new Commercetools\Symfony\CtpBundle\CtpBundle(),
+            new \FrontendBundle\FrontendBundle(),
+            new \ApiBundle\ApiBundle(),
+            new \ServiceBundle\ServiceBundle()
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
