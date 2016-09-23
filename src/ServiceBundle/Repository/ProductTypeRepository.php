@@ -30,5 +30,10 @@ use Commercetools\Symfony\CtpBundle\Model\Repository;
  */
 class ProductTypeRepository extends Repository
 {
+    private $file = '../Resources/_fixtures/producttypes.json';
 
+    public function createProductType()
+    {
+        dump($this->file);
+    }
 }

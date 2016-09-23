@@ -17,6 +17,10 @@
 #/app/config/parameters.yml
 #/app/config/parameters.yml.dist
 
+# Compiled Assets
+/bundles/frontend/css/compiled/*
+/bundles/frontend/js/compiled/*
+
 # Composer
 /vendor/
 

@@ -33,6 +33,13 @@ framework:
     http_method_override: true
     assets: ~
 
+# Assetic
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
+
 # Twig Configuration
 twig:
     debug:            "%kernel.debug%"

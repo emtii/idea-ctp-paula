@@ -57,17 +57,27 @@
 
     {# css #}
     {% block frontend_index_head_css %}
-        <link rel="stylesheet" href="{{ asset('bundles/frontend/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('bundles/frontend/css/freelancer.css') }}">
-        <link rel="stylesheet" href="{{ asset('bundles/frontend/font-awesome/css/font-awesome.min.css') }}">
+        {% stylesheets
+            'bundles/frontend/css/bootstrap.min.css'
+            'bundles/frontend/css/freelancer.css'
+            'bundles/frontend/font-awesome/css/font-awesome.min.css'
+            filter='cssrewrite' output='bundles/frontend/css/compiled/app.css'
+        %}
+            <link rel="stylesheet" href="{{ asset_url }}">
+        {% endstylesheets %}
     {% endblock %}
 
     {# js #}
     {% block frontend_index_head_js %}
-        <script type="text/javascript" src="{{ asset('bundles/frontend/js/jquery.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('bundles/frontend/js/bootstrap.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('bundles/frontend/js/jquery.nouislider.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('bundles/frontend/js/freelancer.js') }}"></script>
+        {% javascripts
+            'bundles/frontend/js/jquery.js'
+            'bundles/frontend/js/bootstrap.min.js'
+            'bundles/frontend/js/jquery.nouislider.min.js'
+            'bundles/frontend/js/freelancer.js'
+            output='bundles/frontend/js/compiled/app.js'
+        %}
+            <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
     {% endblock %}
 
     {# fonts #}
