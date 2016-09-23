@@ -2,7 +2,6 @@
 
 namespace ServiceBundle\Command;
 
-use ServiceBundle\Factory\ProductTypeFactory;
 use ServiceBundle\Repository\ProductTypeRepository;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
@@ -110,7 +109,8 @@ class PaulaImportProductTypesCommand extends ContainerAwareCommand
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-
+        $ptr = new ProductTypeRepository();
+        $ptr->createProductType();
 
 
         // http://symfony.com/doc/current/components/stopwatch.html

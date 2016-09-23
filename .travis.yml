@@ -11,7 +11,9 @@ before_install:
   - composer self-update
 
 install:
-  - composer install --no-interaction
+  - composer install --no-interaction --no-dev --optimize-autoloader
+  - php app/console cache:clear --env=prod --no-debug
+  - php app/console assetic:dump --env=prod --no-debug
 
 before_script:
 
