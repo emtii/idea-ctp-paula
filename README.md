@@ -11,7 +11,12 @@ Usage: php bin/console paula:import-producttypes [options]
     --batch-size                    Choose batch size between 1 and 500.
 ```
 ## Version History
-### v.0.0.8 (September 16, 2016)
+### v0.0.9 (September 24, 2016)
+* add assetic handling
+* add improved composer build handling for travis
+* re-add swiftmailer bundle for prod app
+
+### v0.0.8 (September 16, 2016)
 * implement ctp symfony bundle
 * remove own ctp bundle, not needed anymore
 * fix missing default value in product type import command
