@@ -15,7 +15,6 @@ class ProductController extends Controller
      */
     public function getProductsAction()
     {
-
         // demo data
         $notes = [
             ['id' => 1, 'username' => 'AquaPelham', 'avatarUri' => '/images/leanna.jpeg', 'note' => 'Octopus asked me a riddle, outsmarted me', 'date' => 'Dec. 10, 2015'],
