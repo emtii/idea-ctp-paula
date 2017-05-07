@@ -1,44 +1,12 @@
-# Symfony 3 - cache, session files, temporary files and logs
-/var/bootstrap.php.cache
-/var/SymfonyRequirements.php
-/var/cache/*
-!/var/cache/.gitkeep
-/var/logs/*
-!/var/logs/.gitkeep
-/var/sessions/*
-!/var/sessions/.gitkeep
-/var/imports/*
-!/var/imports/.gitkeep
-
-# Symfony 3 - web folder
-/web/uploads/*
-
-# Hidden Parameters
-#/app/config/parameters.yml
-#/app/config/parameters.yml.dist
-
-# Compiled Assets
-/bundles/frontend/css/compiled/*
-/bundles/frontend/js/compiled/*
-
-# Composer
-/vendor/
-
-# Build Folders
-/build/*
-
-# PHPUnit
-/cache.properties
-
-# Email spool folder
-/app/spool/*
-
-# Backup entities generated with doctrine:generate:entities command
-*/Entity/*~
-
-# IDE specific stuff
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
 /.idea
-
-# Build
-/build/
-/coverage.clover
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.env
+.env.example

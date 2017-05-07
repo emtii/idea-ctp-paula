@@ -1,5 +1,0 @@
-api_bundle:
-    resource: "@ApiBundle/Resources/config/routes.yml"
-
-frontend_bundle:
-    resource: "@FrontendBundle/Resources/config/routes.yml"
