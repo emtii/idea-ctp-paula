@@ -11,6 +11,17 @@
 |
 */
 
+// homepage
 Route::get('/', function () {
     return view('home.index');
+});
+
+// listing
+Route::get('/listing', function () {
+    return view('listing.index');
+});
+
+// details
+Route::get('/details', function () {
+    return view('details.index');
 });
